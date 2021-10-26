@@ -37,3 +37,10 @@ if __name__ == '__main__':
         mythread = MyThread(name = "Thread-{}".format(x + 1)) 
         mythread.start()                                   
 time.sleep(.1) 
+
+#to be changed later
+req = urllib2.Request('https://www.poornima.org/',data)
+req.add_header('Accept', '*/*')
+req.add_header('User-Agent', 'Mozilla/5.0 (Wihndows NT 6.1; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0')
+req.add_header('Connection', '')
+req.add_header('Content-type', 'text/xml')
